@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <my-header class="header" />
+    <div class="container">
+      <side-nav class="side-menu" />
+      <router-view class="main-content" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyHeader from "@/components/Organisms/MyHeader.vue";
+import SideNav from "@/components/Organisms/SideNav.vue";
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    MyHeader,
+    SideNav
   }
-}
+};
 </script>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex: 1;
+}
+.side-menu {
+  flex: 0 0 15rem;
+}
+.main-content {
+  flex: 1;
+  overflow-y: scroll;
+  height: 85vh;
 }
 </style>
