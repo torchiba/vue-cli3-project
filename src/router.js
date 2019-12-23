@@ -1,10 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import vuescroll from 'vue-scroll';
 import Home from "./components/Pages/Home.vue";
 
 Vue.use(Router);
-Vue.use(vuescroll);
 
 export default new Router({
   mode: "history",

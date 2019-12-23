@@ -1,5 +1,6 @@
 <template>
-  <header>
+  <!-- カスタムディレクティブ使用 -->
+  <header v-scroll="handleScroll">
     <my-title>Header Title</my-title>
     <nav class="globalNavi">
       <link-list :link-list="linkList" />
@@ -29,6 +30,21 @@ export default {
         page3: 'page3'
       }
     };
+  },
+  methods: {
+    handleScroll (evt, el) {
+      if (window.scrollY > 1) {
+        el.setAttribute(
+          'style',
+          'opacity: 0;'
+        )
+      } else {
+        el.setAttribute(
+          'style',
+          'opacity: 1;'
+        )
+      }
+    }
   }
 };
 </script>
