@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page3 {
   padding: 1rem 2rem;
 }

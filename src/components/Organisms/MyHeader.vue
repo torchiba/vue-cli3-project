@@ -1,32 +1,53 @@
 <template>
   <header>
-    <my-title>Practice</my-title>
+    <my-title>Header Title</my-title>
+    <nav class="globalNavi">
+      <link-list :link-list="linkList" />
+    </nav>
     <search-form class="search-form" />
   </header>
 </template>
 
 <script>
 import MyTitle from "@/components/Atoms/MyTitle.vue";
+import LinkList from "@/components/Molecules/LinkList.vue";
 import SearchForm from "@/components/Molecules/MySearchForm.vue";
 
 export default {
   name: "my-header",
   components: {
     MyTitle,
-    SearchForm
+    SearchForm,
+    LinkList
+  },
+  data() {
+    return {
+      linkList: {
+        home: '/',
+        page1: 'page1',
+        page2: 'page2',
+        page3: 'page3'
+      }
+    };
   }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   background-color: #24292e;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
   color: #ffffff;
+  align-items: center;
 }
 .search-form {
   margin: auto 0;
+}
+.globalNavi {
+  ul {
+    display: flex;
+  }
 }
 </style>

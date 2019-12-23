@@ -11,6 +11,7 @@
 <script>
 import MyHeader from "@/components/Organisms/MyHeader.vue";
 import SideNav from "@/components/Organisms/SideNav.vue";
+import 'reset-css';
 
 export default {
   components: {
@@ -20,7 +21,20 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+:root {
+  --font-size: 16px;
+  
+}
+
+@mixin breakword($wordBreak: break-all, $overflowWrap: break-word, $overflowX: inherit) {
+	word-break: $wordBreak; //ほんとはbreak-wordがベストなんだけどWinブラウザで崩れた（min-widthと併用で解決できるようだけど大掛かりな改修になりそうなので）
+	overflow-wrap: $overflowWrap;
+	word-wrap: $overflowWrap; //保険
+	// white-space: normal !important;
+	overflow-x: $overflowX;
+}
+
 body {
   margin: 0;
 }
@@ -40,8 +54,7 @@ body {
   flex: 0 0 15rem;
 }
 .main-content {
-  flex: 1;
-  overflow-y: scroll;
-  height: 85vh;
+  /* flex: 1;
+  height: 85vh; */
 }
 </style>

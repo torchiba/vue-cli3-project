@@ -19,6 +19,11 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3",
+    "reset-css": "^5.0.1",
+    "sass-loader": "^8.0.0",
+    "vue-scroll": "^2.1.13",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -30,7 +35,16 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off",
+      "no-restricted-syntax": [
+        "error",
+        {
+            "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+            "message": "Unexpected property on console object was called"
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
