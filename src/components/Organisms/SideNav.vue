@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      linkList: { home: "/", page1: "page1", page2: "page2", page3: "page3" }
+      linkList: { home: "/", about: "about", blog: "blog", contact: "contact" }
     };
   }
 };

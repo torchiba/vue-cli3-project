@@ -1,6 +1,6 @@
 <template>
-  <div class="page3">
-    <my-title>Page3</my-title>
+  <div class="contact">
+    <my-title>Contact</my-title>
     <paragraph>
       homehomehomehomehomehomehomehomehomehomehomehomehomehome
       homehomehomehomehomehomehomehomehomehomehomehomehomehome
@@ -19,7 +19,7 @@ import MyTitle from "@/components/Atoms/MyTitle";
 import Paragraph from "@/components/Atoms/Paragraph";
 
 export default {
-  name: "page3",
+  name: "contact",
   components: {
     MyTitle,
     Paragraph
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page3 {
+.contact {
   padding: 1rem 2rem;
 }
 </style>

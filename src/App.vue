@@ -24,7 +24,6 @@ export default {
 <style lang="scss">
 :root {
   --font-size: 16px;
-  
 }
 
 @mixin breakword($wordBreak: break-all, $overflowWrap: break-word, $overflowX: inherit) {

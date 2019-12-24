@@ -14,19 +14,19 @@ export default new Router({
       component: Home
     },
     {
-      path: "/page1",
-      name: "page1",
-      component: () => import("./components/Pages/Page1.vue")
+      path: "/about",
+      name: "about",
+      component: () => import("./components/Pages/About.vue")
     },
     {
-      path: "/page2",
-      name: "page2",
-      component: () => import("./components/Pages/Page2.vue")
+      path: "/blog",
+      name: "blog",
+      component: () => import("./components/Pages/Blog.vue")
     },
     {
-      path: "/page3",
-      name: "page3",
-      component: () => import("./components/Pages/Page3.vue")
+      path: "/contact",
+      name: "contact",
+      component: () => import("./components/Pages/Contact.vue")
     }
   ]
 });
