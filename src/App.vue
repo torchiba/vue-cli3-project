@@ -32,6 +32,10 @@ export default {
   --white: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 @mixin breakword($wordBreak: break-all, $overflowWrap: break-word, $overflowX: inherit) {
 	word-break: $wordBreak; //ほんとはbreak-wordがベストなんだけどWinブラウザで崩れた（min-widthと併用で解決できるようだけど大掛かりな改修になりそうなので）
 	overflow-wrap: $overflowWrap;
