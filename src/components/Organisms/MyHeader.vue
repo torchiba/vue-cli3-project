@@ -1,28 +1,33 @@
 <template>
   <!-- カスタムディレクティブ使用 -->
-  <header v-scroll="handleScroll">
-    <my-title>Header Title</my-title>
-    <nav class="globalNavi">
-      <link-list :link-list="linkList" />
-    </nav>
-    <search-form class="search-form" />
+  <header v-scroll="handleScroll" :class="{ 'transition': headerFlag }">
+    <my-container>
+      <link-list-item to="/" class="logo">LOGO</link-list-item>
+      <nav class="globalNavi">
+        <link-list :link-list="linkList" />
+      </nav>
+      <search-form class="search-form" />
+    </my-container>
   </header>
 </template>
 
 <script>
-import MyTitle from "@/components/Atoms/MyTitle.vue";
+import LinkListItem from "@/components/Atoms/LinkListItem.vue";
 import LinkList from "@/components/Molecules/LinkList.vue";
 import SearchForm from "@/components/Molecules/MySearchForm.vue";
+import MyContainer from "@/components/Atoms/MyContainer";
 
 export default {
   name: "my-header",
   components: {
-    MyTitle,
+    LinkListItem,
     SearchForm,
-    LinkList
+    LinkList,
+    MyContainer
   },
   data() {
     return {
+      headerFlag: false,
       linkList: {
         home: '/',
         about: 'about',
@@ -32,17 +37,11 @@ export default {
     };
   },
   methods: {
-    handleScroll (evt, el) {
+    handleScroll () {
       if (window.scrollY > 1) {
-        el.setAttribute(
-          'style',
-          'opacity: 0;'
-        )
+        this.headerFlag = true;
       } else {
-        el.setAttribute(
-          'style',
-          'opacity: 1;'
-        )
+        this.headerFlag = false;
       }
     }
   }
@@ -53,10 +52,11 @@ export default {
 header {
   background-color: #24292e;
   display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
   color: #ffffff;
-  align-items: center;
+  opacity: 1;
+  &.transition {
+    opacity: 0;
+  }
 }
 .search-form {
   margin: auto 0;

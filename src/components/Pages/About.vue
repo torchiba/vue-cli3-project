@@ -99,6 +99,6 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  padding: 1rem 2rem;
+  // padding: 1rem 2rem;
 }
 </style>

@@ -29,6 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 .blog {
-  padding: 1rem 2rem;
+  // padding: 1rem 2rem;
 }
 </style>
