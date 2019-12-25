@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="linkList">
     <li v-for="(link, key) in linkList" :key="key">
       <link-list-item :to="link">{{ key }}</link-list-item>
     </li>
@@ -22,3 +22,6 @@
     }
   };
 </script>
+
+<style lang="scss" scoped>
+</style>

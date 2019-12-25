@@ -1,7 +1,7 @@
 <template>
   <main class="home" >
     <header-title>Home</header-title>
-    <div class="content">
+    <div class="mainContent">
       <my-container>
         <paragraph>
           あ

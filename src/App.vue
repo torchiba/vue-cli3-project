@@ -10,7 +10,7 @@
 <script>
 import MyHeader from "@/components/Organisms/MyHeader.vue";
 // import SideNav from "@/components/Organisms/SideNav.vue";
-import 'reset-css';
+import 'modern-css-reset';
 
 export default {
   components: {
