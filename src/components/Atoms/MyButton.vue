@@ -8,7 +8,8 @@ export default {
 
   methods: {
     onClick() {
-      this.$emit("click");
+      this.$emit('click');
+      console.log('click!!!');
     }
   }
 };
@@ -16,11 +17,8 @@ export default {
 
 <style lang="scss" scoped>
 button {
-  border: 1px solid #252525;
-  border-radius: 8px;
-  background-color: #ffffff;
+  border: 1px solid var(--dark);
   cursor: pointer;
-  font-size: 15px;
-  padding: 3px 10px;
+  border-radius: 3px;
 }
 </style>

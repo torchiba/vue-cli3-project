@@ -21,7 +21,7 @@
 
           <template v-else>
             <paragraph v-if="loading">loading ...</paragraph>
-            
+
             <ul class="imgList" v-else>
               <li v-for="list in picsum.data" :key="list.id">
                 <img v-lazy="list.download_url" :alt="list.author" >
@@ -65,7 +65,7 @@ export default {
   },
   mounted () {
     axios
-      .get('https://picsum.photos/v2/list?page=2&limit=10')
+      .get('https://picsum.photos/v2/list?page=2&limit=3')
       .then(response => (this.picsum = response))
       .catch(error => {
         console.log(error)

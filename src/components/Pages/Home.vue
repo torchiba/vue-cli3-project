@@ -3,6 +3,7 @@
     <header-title>Home</header-title>
     <main-content>
       <my-container>
+        <my-button>押したらなんか出るボタン</my-button>
         <paragraph>
           吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
         </paragraph>
@@ -11,10 +12,6 @@
         </paragraph>
         <paragraph>
           homehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehome
-        </paragraph>
-        <paragraph>homehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehome
-        </paragraph>
-        <paragraph>homehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehomehome
         </paragraph>
       </my-container>
     </main-content>
@@ -26,6 +23,7 @@ import HeaderTitle from "@/components/Molecules/HeaderTitle";
 import Paragraph from "@/components/Atoms/Paragraph";
 import MyContainer from "@/components/Atoms/MyContainer";
 import MainContent from "@/components/Atoms/MainContent";
+import MyButton from "@/components/Atoms/MyButton";
 
 export default {
   name: "home",
@@ -33,7 +31,8 @@ export default {
     HeaderTitle,
     Paragraph,
     MyContainer,
-    MainContent
+    MainContent,
+    MyButton
   }
 };
 </script>
