@@ -22,6 +22,9 @@
   background-color: var(--theme);
   color: var(--white);
   font-size: 2rem;
-  padding: 2rem 0;
+  padding: 4rem 0;
+  h1 {
+    font-weight: bold;
+  }
 }
 </style>

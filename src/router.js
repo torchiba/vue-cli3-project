@@ -24,6 +24,11 @@ export default new Router({
       component: () => import("./components/Pages/Blog.vue")
     },
     {
+      path: "/gallery",
+      name: "gallery",
+      component: () => import("./components/Pages/Gallery.vue")
+    },
+    {
       path: "/contact",
       name: "contact",
       component: () => import("./components/Pages/Contact.vue")

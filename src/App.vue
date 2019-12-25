@@ -3,7 +3,6 @@
     <my-header class="header" />
     <div class="content">
       <router-view class="main-content" />
-      <!-- <side-nav class="side-menu" /> -->
     </div>
   </div>
 </template>

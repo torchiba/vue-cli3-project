@@ -31,6 +31,7 @@ export default {
       linkList: {
         home: '/',
         about: 'about',
+        gallery: 'gallery',
         blog: 'blog',
         contact: 'contact'
       }
@@ -49,11 +50,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.logo {
+  color: var(--white)!important;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+.globalNavi /deep/ {
+  li:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+  a {
+    color: var(--white);
+    text-decoration: none;
+    &.router-link-exact-active {
+      color: var(--theme);
+    }
+  }
+}
 header {
   background-color: #24292e;
   display: flex;
-  color: #ffffff;
+  color: var(--white);
   opacity: 1;
+  
   &.transition {
     opacity: 0;
   }
