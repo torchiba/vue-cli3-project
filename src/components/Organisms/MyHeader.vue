@@ -4,9 +4,9 @@
     <my-container>
       <link-list-item to="/" class="logo">LOGO</link-list-item>
       <nav class="globalNavi">
-        <link-list :link-list="linkList" />
+        <link-list :link-list="linkList"/>
       </nav>
-      <search-form class="search-form" />
+      <!-- <search-form class="search-form" /> -->
     </my-container>
   </header>
 </template>
@@ -14,14 +14,14 @@
 <script>
 import LinkListItem from "@/components/Atoms/LinkListItem.vue";
 import LinkList from "@/components/Molecules/LinkList.vue";
-import SearchForm from "@/components/Molecules/MySearchForm.vue";
+// import SearchForm from "@/components/Molecules/MySearchForm.vue";
 import MyContainer from "@/components/Atoms/MyContainer";
 
 export default {
   name: "my-header",
   components: {
     LinkListItem,
-    SearchForm,
+    // SearchForm,
     LinkList,
     MyContainer
   },

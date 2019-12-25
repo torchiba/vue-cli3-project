@@ -1,73 +1,76 @@
 <template>
-  <main class="blog" >
+  <section class="blog" >
     <header-title>Blog</header-title>
-    <my-container>
-      <paragraph>
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-      </paragraph>
-      <paragraph>
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-      </paragraph>
-      <paragraph>
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-      </paragraph>
-      <paragraph>
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-      </paragraph>
-      <paragraph>
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-        homehomehomehomehomehomehomehomehomehomehomehomehomehome
-      </paragraph>
-    </my-container>
-    
-  </main>
+    <main-content>
+      <my-container>
+        <paragraph>
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+        </paragraph>
+        <paragraph>
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+        </paragraph>
+        <paragraph>
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+        </paragraph>
+        <paragraph>
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+        </paragraph>
+        <paragraph>
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+          homehomehomehomehomehomehomehomehomehomehomehomehomehome
+        </paragraph>
+      </my-container>
+    </main-content>
+  </section>
 </template>
 
 <script>
 import HeaderTitle from "@/components/Molecules/HeaderTitle";
 import Paragraph from "@/components/Atoms/Paragraph";
 import MyContainer from "@/components/Atoms/MyContainer";
+import MainContent from "@/components/Atoms/MainContent";
 
 export default {
   name: "blog",
   components: {
     HeaderTitle,
     Paragraph,
-    MyContainer
+    MyContainer,
+    MainContent
   },
   data() {
     return {
@@ -78,7 +81,7 @@ export default {
       //   {no:3, path: 'https://dummyimage.com/3000x3000/fcc/000.png&text=Uploaded3'},
       //   {no:4, path: 'https://dummyimage.com/3000x3000/fcc/000.png&text=Uploaded4'}
       // ],
-      picsom: null
+      picsum: null
     }
   }
 };

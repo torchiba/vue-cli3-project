@@ -33,14 +33,8 @@ export default {
 
 img {
   max-width: 100%;
-}
-
-@mixin breakword($wordBreak: break-all, $overflowWrap: break-word, $overflowX: inherit) {
-	word-break: $wordBreak; //ほんとはbreak-wordがベストなんだけどWinブラウザで崩れた（min-widthと併用で解決できるようだけど大掛かりな改修になりそうなので）
-	overflow-wrap: $overflowWrap;
-	word-wrap: $overflowWrap; //保険
-	// white-space: normal !important;
-	overflow-x: $overflowX;
+  height: auto;
+  vertical-align: bottom;
 }
 
 html {
@@ -58,13 +52,13 @@ body {
   flex-direction: column;
 }
 .content {
-  display: flex;
+  // display: flex;
 }
 .side-menu {
   // flex: 0 0 15rem;
 }
 .main-content {
-  flex: 1;
+  // flex: 1;
   /* flex: 1;
   height: 85vh; */
 }

@@ -9,12 +9,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-p:not(:last-of-type) {
-  margin-bottom: 1em;
-  // @include breakword;
-}
-
 p {
-  
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
 }
 </style>
