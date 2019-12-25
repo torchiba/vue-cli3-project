@@ -1,4 +1,4 @@
-# chiba-vue-cli-test
+# vue-cli3-project
 
 ## Project setup
 ```
@@ -27,3 +27,6 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### いじってるひと
+[@torchiba](https://github.com/torchiba/)
